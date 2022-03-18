@@ -21,13 +21,14 @@
             <view>
                 <text>参数</text>
                 <text>适用人群</text>
+
                 <text>适用性别</text>
             </view>
         </view>
 
         <view>
             <view>
-                <u-tabs :list="tabList" @click="click"></u-tabs>
+                <u-tabs :list="tabList"></u-tabs>
             </view>
         </view>
 
@@ -98,6 +99,7 @@
 
         }
         .combo-params{
+            border-bottom: 1px solid #eee;
             view{
                 border-top: 1px solid #eee;
                padding:10px 0;

@@ -12,35 +12,35 @@
                    <u-radio-group
                            v-model="userInfoForm.sex"
                            placement="row">
-                       <u-radio activeColor="red">男</u-radio>
-                       <u-radio activeColor="女">男</u-radio>
+                       <u-radio activeColor="red" label="男" name="1"></u-radio>
+                       <u-radio activeColor="red" label="女" name="2"></u-radio>
                    </u-radio-group>
                </u-form-item>
-               <u-form-item label="出生日期" prop="" borderBottom labelWidth="80px">
+               <u-form-item label="出生日期" prop="" borderBottom labelWidth="80px"  @click="birthdayShow = true">
                    <view>
                        <u-calendar :show="birthdayShow" @confirm="handleConfirm" @close="birthdayShow = false"></u-calendar>
-                       <u-button @click="birthdayShow = true" class="btn">请选择出生日期</u-button>
+                       <u-input v-model="userInfoForm.birthday" border="none" placeholder="请选择出生日期"></u-input>
                    </view>
                </u-form-item>
                <u-form-item label="婚  否" prop="" borderBottom labelWidth="80px">
                    <u-radio-group
                            v-model="userInfoForm.marry"
                            placement="row">
-                       <u-radio activeColor="red">未婚</u-radio>
-                       <u-radio activeColor="女">已婚</u-radio>
+                       <u-radio activeColor="red" label="未婚" name="1"></u-radio>
+                       <u-radio activeColor="red" label="已婚" name="2"></u-radio>
                    </u-radio-group>
                </u-form-item>
-               <u-form-item label="证件类型" prop="" borderBottom labelWidth="80px">
+               <u-form-item label="证件类型" prop="" borderBottom labelWidth="80px" @click="certTypeShow = true">
                    <view>
-                       <u-picker :show="certTypeShow" :columns="certOptions"></u-picker>
-                       <u-button @click="certTypeShow = true" class="btn">请选择证件类型</u-button>
+                       <u-picker :show="certTypeShow" :columns="certOptions" @cancel="certTypeShow= false"></u-picker>
+                       <u-input v-model="userInfoForm.birthday" border="none" placeholder="请选择证件类型"></u-input>
                    </view>
                </u-form-item>
-               <u-form-item label="证件 号" prop="" borderBottom labelWidth="80px">
-                   <u-input v-model="userInfoForm.name" border="none" placeholder="请输入证件号"></u-input>
+               <u-form-item label="证 件 号" prop="" borderBottom labelWidth="80px">
+                   <u-input v-model="userInfoForm.idCard" type="idcard" border="none" placeholder="请输入证件号"></u-input>
                </u-form-item>
                <u-form-item label="联系电话" prop="" borderBottom labelWidth="80px">
-                   <u-input v-model="userInfoForm.name" border="none" placeholder="请输入联系电话"></u-input>
+                   <u-input v-model="userInfoForm.phone" type="number" border="none" placeholder="请输入联系电话"></u-input>
                </u-form-item>
            </u-form>
        </view>
@@ -62,7 +62,11 @@
             return {
                 userInfoForm:{
                     name:'',
-                    sex:'男',
+                    sex:'1',
+                    birthday:'',
+                    phone:'',
+                    idCard:'',
+                    marry:'1'
                 },
                 birthdayShow:false,
                 certOptions:[],

@@ -29,23 +29,23 @@
                         <view class="sex">
                             <view>性别</view>
                             <view class="sexoptions">
-                               <view>男</view>
-                                <view>女</view>
-                                <view>通用</view>
+                               <view :style="{backgroundColor:sex=== 1? 'rgba(66, 159, 254, 0.71)' : ''}"  @click="handleSexChange(1)">男</view>
+                                <view :style="{backgroundColor:sex=== 2? 'rgba(66, 159, 254, 0.71)' : ''}" @click="handleSexChange(2)">女</view>
+                                <view :style="{backgroundColor:sex=== 0? 'rgba(66, 159, 254, 0.71)' : ''}" @click="handleSexChange(0)">通用</view>
                             </view>
                         </view>
                         <view class="age">
                             <view>年龄</view>
                             <view class="input-range">
-                                <u-input  style="width:30px"/> 至
-                                <u-input style="width:30px"/>
+                                <u-input type="number"  class="input"/> 至
+                                <u-input type="number" class="input"/>
                             </view>
                         </view>
                         <view>
                             <view>价格区间</view>
                             <view class="input-range">
-                                <u-input  style="width:30px"/> 至
-                                <u-input style="width:30px"/>
+                                <u-input type="number"   class="input"/> 至
+                                <u-input type="number" class="input"/>
                             </view>
                         </view>
                     </view>
@@ -95,6 +95,7 @@
                 filterShow:false,
                 active:1,
                 isClick:4,
+                sex:0,
             }
         },
         onload:function(){
@@ -129,99 +130,122 @@
             handleComboType(index){
                 this.isClick = index
             },
+            handleSexChange(type){
+                this.sex = type
+            }
         }
     }
 </script>
 
 <style scoped lang="less">
-.combo-wrapper{
-    .comboType{
-        padding:5px 0;
-        border-top:1px solid #eee;
+.combo-wrapper {
+    .comboType {
+        padding: 5px 0;
+        border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
-        display:flex;
+        display: flex;
         justify-content: space-around;
-        .comboType-text{
+
+        .comboType-text {
             font-size: 12px;
             text-align: center;
         }
     }
-    .combo-filter{
-        margin-top:20px;
-        display:flex;
+
+    .combo-filter {
+        margin-top: 20px;
+        display: flex;
         justify-content: space-around;
         align-items: center;
-        height:40px;
-        border-top:1px solid #eee;
+        height: 40px;
+        border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
-        .line{
-            width:1px;
-            height:45px;
+
+        .line {
+            width: 1px;
+            height: 45px;
             background-color: #eee;
         }
-        .filter-pop{
-            position: absolute;
-            left:0px;
-            top:40px;
-            width:100%;
-            padding:5px 10px;
 
-            border-bottom:1px solid #eee;
+        .filter-pop {
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            width: 100%;
+            padding: 5px 10px;
+
+            border-bottom: 1px solid #eee;
             background-color: white;
-            z-index:999;
-            .sex{
-                .sexoptions{
-                    width:80%;
-                    display:flex;
+            z-index: 999;
+
+            .sex {
+                .sexoptions {
+                    width: 80%;
+                    display: flex;
                     justify-content: space-around;
-                    view{
-                        width:60px;
-                        height:25px;
-                        border:1px solid #eee;
-                        text-align:center;
+
+                    view {
+                        width: 60px;
+                        height: 25px;
+                        border: 1px solid #eee;
+                        text-align: center;
                     }
                 }
             }
-            .age{
+
+            .age {
             }
-            .input-range{
-                display:flex;
-                width:80%;
+
+            .input-range {
+                display: flex;
+                width: 80%;
+                align-items: center;
+
+                .input {
+                    width: 30px;
+                    text-align: center;
+                }
             }
         }
     }
-    .combo-list >view{
-        display:flex;
-        padding:5px;
-       .content{
-           margin-left:3px;
-           &>view{
-               padding-top:7px;
-           }
-           & >view:nth-of-type(1){
-               font-weight: bold;
-               font-size: 14px;
-               text-indent: 20px;
-           }
-           & >view:nth-of-type(2){
-               font-size: 13px;
-           }
-           .price{
-               display:flex;
-               justify-content: space-between;
-               view{
-                   &:nth-of-type(1){
-                       color:#FB9A12;
-                   }
-                   &:nth-of-type(2){
-                       font-size: 10px;
-                       color:#B7B2B2;
-                   }
-               }
-           }
-       }
+
+    .combo-list {
+        margin-bottom: 50px;
+    & > view {
+        display: flex;
+        padding: 5px;
+        .content {
+            margin-left: 3px;
+            & > view {
+                padding-top: 7px;
+            }
+            & > view:nth-of-type(1) {
+                font-weight: bold;
+                font-size: 14px;
+                text-indent: 20px;
+            }
+            & > view:nth-of-type(2) {
+                font-size: 13px;
+            }
+            .price {
+                display: flex;
+                justify-content: space-between;
+
+                view {
+                    &:nth-of-type(1) {
+                        color: #FB9A12;
+                    }
+
+                    &:nth-of-type(2) {
+                        font-size: 10px;
+                        color: #B7B2B2;
+                    }
+                }
+            }
+        }
 
 
     }
+}
 }
 </style>

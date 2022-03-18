@@ -1,5 +1,5 @@
 <template>
-    <view>
+    <view class="report-wrapper">
 
     </view>
 </template>
@@ -26,6 +26,7 @@
 </script>
 
 <style scoped lang="less">
-.item-wrapper{
+.report-wrapper{
+    border-top:1px solid #eee;
 }
 </style>

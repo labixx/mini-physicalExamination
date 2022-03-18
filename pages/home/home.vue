@@ -45,11 +45,14 @@
            </view>
             <view>健康小常识</view>
         </view>
-        <view v-for="(item,index) in 5" :key="index">
-            <view class="healthy-item">
-                <view>惊蛰到，养生健康有妙招</view>
-                <view class="healthy-content">3月5号是二十四节气的“惊蛰”，惊蛰又名“启蛰”，惊蛰到，春雷响，万物长！时至惊蛰......</view>
-                <view class="time">2022-3-10</view>
+
+        <view style="margin-bottom:50px">
+            <view v-for="(item,index) in 5" :key="index" @click="handleToHealthyDetail">
+                <view class="healthy-item">
+                    <view>惊蛰到，养生健康有妙招</view>
+                    <view class="healthy-content">3月5号是二十四节气的“惊蛰”，惊蛰又名“启蛰”，惊蛰到，春雷响，万物长！时至惊蛰......</view>
+                    <view class="time">2022-3-10</view>
+                </view>
             </view>
         </view>
 
@@ -58,7 +61,7 @@
                 :fixed="true"
                 :placeholder="false"
                 :safeAreaInsetBottom="false">
-            <u-tabbar-item text="首页" icon="home" @click="handleToHome" ></u-tabbar-item>
+            <u-tabbar-item text="首页" icon="home" @click="handleToHome"></u-tabbar-item>
             <u-tabbar-item text="套餐" icon="bag" @click="handleToCombo" ></u-tabbar-item>
             <u-tabbar-item text="我的" icon="account" @click="handleToMy" ></u-tabbar-item>
         </u-tabbar>
@@ -111,9 +114,15 @@
             //跳转到体检问卷
             handleToTest(){
                 uni.navigateTo({
-                    url:'/pages/advance-project/advance-report'
+                    url:'/pages/physicalExam-test/physicalExam-test'
                 })
-            }
+            },
+            handleToHealthyDetail(){
+                uni.navigateTo({
+                    url:'/pages/healthy/healthy-detail'
+                })
+            },
+
 
         }
     }
@@ -144,6 +153,7 @@
                     width:47%;
                     height:80px;
                     border-radius:12px;
+                    /*background-color: #45AE98;*/
                     background-color: rgba(66, 159, 254, 0.71);
                 }
             }
