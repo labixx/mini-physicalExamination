@@ -8,18 +8,21 @@
     /* h5特有相关 */
     "h5" : {
         "devServer" : {
-             "disableHostCheck" : true,
-             "proxy" : {
-                 "/" : {
-                     "target" : "http://192.168.2.46:18081", //目标接口域名
-                      "changeOrigin" : true,  //是否跨域
-                      "secure" : true,  // 设置支持https协议的代理
-                       "pathRewrite": {  
-                          "^": ""  
-                      }  
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/" : {
+                    "target" : "http://192.168.2.46:18081", //目标接口域名
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : true, // 设置支持https协议的代理
+                    "pathRewrite" : {
+                        "^" : ""
+                    }
                 }
-           }
-       }
+            }
+        },
+        "router" : {
+            "mode" : "hash"
+        }
     },
     /* 5+App特有相关 */
     "app-plus" : {

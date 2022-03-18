@@ -6,13 +6,17 @@
 		{
 			"path": "pages/login/login",
 			"style": {
-				"app-plus": {"titleNView": false}
+				"app-plus": {
+					"titleNView": false,
+					"autoBackButton": false
+				}
 			}
+
 		},
 		{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "一体化体检预约平台",
+				"navigationBarTitleText": "体检套餐",
 				"app-plus": {"titleNView": false}
 			}
 		},
