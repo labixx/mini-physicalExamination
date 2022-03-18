@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5dce848f-fb46-4d73-b81c-54838c95f8c5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="26Rz3PZvJWh1YZwaxCJufh7yw7Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/physicalExam-test" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\static\home" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\api" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\pages\profile" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\pages\combo" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\uview-ui" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\pages\physicalExam-test" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\pages\advance-project" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\pages\combo" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\pages\userInfo" />
+      <recent name="C:\Users\Administrator\Desktop\companyProject\TbMobile(1)\TbMobile\pages\login" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dce848f-fb46-4d73-b81c-54838c95f8c5" name="Default Changelist" comment="" />
+      <created>1647400986518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647400986518</updated>
+      <workItem from="1647400988228" duration="333000" />
+      <workItem from="1647401684971" duration="18437000" />
+      <workItem from="1647484099219" duration="21896000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="438" y="273" key="FileChooserDialogImpl" timestamp="1647509734734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="438" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1647509734734" />
+    <state x="64" y="146" key="SettingsEditor" timestamp="1647402586103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="64" y="146" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1647402586103" />
+    <state x="226" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1647424104629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="226" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1647424104629" />
+  </component>
+</project>

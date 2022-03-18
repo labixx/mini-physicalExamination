@@ -1,0 +1,79 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ 
+		{
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/combo/combo",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/combo/combo-detail",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/advance-project/advance-physicalExam",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/advance-project/advance-item",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/advance-project/advance-detail",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/userInfo/userInfo",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/physicalExam-test/physicalExam-test",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		},
+		{
+			"path": "pages/advance-project/advance-report",
+			"style": {
+				"app-plus": {"titleNView": false}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "一体化体检预约平台",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
